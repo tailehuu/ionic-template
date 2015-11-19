@@ -1,0 +1,23 @@
+<template name="layout">
+    {{#ionBody}}
+        {{> ionNavBar class="bar-positive"}}
+
+        {{#ionNavView}}
+            {{> yield}}
+        {{/ionNavView}}
+
+        {{#if isAndroid}}
+            {{#ionTabs style="android"}}
+                {{> ionTab title="Search" path="search" icon="android-search"}}
+                {{> ionTab title="Messages" path="messages" icon="android-chat"}}
+                {{> ionTab title="Account" path="accounts" icon="android-person"}}
+            {{/ionTabs}}
+        {{else}}
+            {{#ionTabs style="ios"}}
+                {{> ionTab title="Search" path="search" iconOff="ios-search" iconOn="ios-search" class="tab-item-positive"}}
+                {{> ionTab title="Messages" path="messages" iconOff="chatboxes" iconOn="chatboxes" class="tab-item-positive"}}
+                {{> ionTab title="Account" path="accounts" iconOff="ios-person-outline" iconOn="ios-person" class="tab-item-positive"}}
+            {{/ionTabs}}
+        {{/if}}
+    {{/ionBody}}
+</template>
