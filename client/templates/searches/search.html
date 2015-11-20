@@ -1,0 +1,38 @@
+<template name="search">
+    <p><img src="{{ cover }}" width="100%"/></p>
+
+    <p>rating ({{ rating }})</p>
+
+    <h3>{{ fullName }}</h3>
+
+    <p>{{> ionIcon icon="location" class="balanced"}} {{ location }}</p>
+
+    <p>
+        <button class="button button-block button-balanced">
+            {{> ionIcon icon="paper-airplane"}} Request Chat
+        </button>
+    </p>
+
+    <p>
+        {{ summary }}
+    </p>
+
+    <p class="balanced" style="font-size: 1.3em;">
+        {{> ionIcon icon="quote"}} {{ inspire.quote }} {{> ionIcon icon="quote"}}
+    </p>
+    - {{ inspire.author }}
+
+    <p>
+        {{#each interests}}
+            <button class="button button-stable" style="margin-bottom: 5px">
+                {{ this }}
+            </button>
+        {{/each}}
+    </p>
+
+    <p>
+        {{#each photos}}
+            <img src="{{ this }}" width="49%"/>
+        {{/each}}
+    </p>
+</template>

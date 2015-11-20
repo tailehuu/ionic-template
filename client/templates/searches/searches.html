@@ -1,0 +1,13 @@
+<template name="searches">
+    {{#contentFor "headerTitle"}}
+        <h1 class="title">Search</h1>
+    {{/contentFor}}
+
+    {{#ionView}}
+        {{#ionContent class="padding"}}
+            {{#each users}}
+                {{> search}}
+            {{/each}}
+        {{/ionContent}}
+    {{/ionView}}
+</template>

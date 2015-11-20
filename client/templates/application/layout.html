@@ -1,6 +1,6 @@
 <template name="layout">
     {{#ionBody}}
-        {{> ionNavBar class="bar-positive"}}
+        {{> ionNavBar class="bar-balanced"}}
 
         {{#ionNavView}}
             {{> yield}}
@@ -14,9 +14,9 @@
             {{/ionTabs}}
         {{else}}
             {{#ionTabs style="ios"}}
-                {{> ionTab title="Search" path="search" iconOff="ios-search" iconOn="ios-search" class="tab-item-positive"}}
-                {{> ionTab title="Messages" path="messages" iconOff="chatboxes" iconOn="chatboxes" class="tab-item-positive"}}
-                {{> ionTab title="Account" path="accounts" iconOff="ios-person-outline" iconOn="ios-person" class="tab-item-positive"}}
+                {{> ionTab title="Search" path="searches" iconOff="ios-search" iconOn="ios-search" class="tab-item-balanced"}}
+                {{> ionTab title="Messages" path="messages" iconOff="chatboxes" iconOn="chatboxes" class="tab-item-balanced"}}
+                {{> ionTab title="Account" path="accounts" iconOff="ios-person-outline" iconOn="ios-person" class="tab-item-balanced"}}
             {{/ionTabs}}
         {{/if}}
     {{/ionBody}}
