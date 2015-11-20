@@ -1,23 +1,59 @@
 <template name="layout">
     {{#ionBody}}
-        {{> ionNavBar class="bar-balanced"}}
 
-        {{#ionNavView}}
-            {{> yield}}
-        {{/ionNavView}}
+        {{#ionSideMenuContainer}}
 
-        {{#if isAndroid}}
-            {{#ionTabs style="android"}}
-                {{> ionTab title="Search" path="search" icon="android-search"}}
-                {{> ionTab title="Messages" path="messages" icon="android-chat"}}
-                {{> ionTab title="Account" path="accounts" icon="android-person"}}
-            {{/ionTabs}}
-        {{else}}
-            {{#ionTabs style="ios"}}
-                {{> ionTab title="Search" path="searches" iconOff="ios-search" iconOn="ios-search" class="tab-item-balanced"}}
-                {{> ionTab title="Messages" path="messages" iconOff="chatboxes" iconOn="chatboxes" class="tab-item-balanced"}}
-                {{> ionTab title="Account" path="accounts" iconOff="ios-person-outline" iconOn="ios-person" class="tab-item-balanced"}}
-            {{/ionTabs}}
-        {{/if}}
+            <!-- begin side menu -->
+            {{#ionSideMenus}}
+                {{#ionSideMenu side="right"}}
+                    <div class="bar bar-header bar-dark">
+                        <h1 class="title">Right Menu</h1>
+                    </div>
+                    <div class="content has-header">
+                        <div class="list">
+                            <div class="item item-icon-left" data-ion-menu-close>
+                                {{> ionIcon icon="person"}} Profile
+                            </div>
+                            <div class="item item-icon-left">
+                                {{> ionIcon icon="cash"}} Payment
+                            </div>
+                            <div class="item item-icon-left">
+                                {{> ionIcon icon="gear-b"}} Setting
+                            </div>
+                        </div>
+                    </div>
+                {{/ionSideMenu}}
+            {{/ionSideMenus}}
+            <!-- end side menu -->
+
+            <!-- begin side menu content -->
+            {{#ionSideMenuContent}}
+                {{> ionNavBar class="bar-balanced"}}
+
+                {{#ionNavView}}
+                    {{> yield}}
+                {{/ionNavView}}
+
+                {{#if isAndroid}}
+                    {{#ionTabs style="android"}}
+                        {{> ionTab title="Search" path="search" icon="android-search"}}
+                        {{> ionTab title="Messages" path="messages" icon="android-chat"}}
+                        {{> ionTab title="Account" path="accounts" icon="android-person"}}
+                    {{/ionTabs}}
+                {{else}}
+                    {{#ionTabs style="ios"}}
+                        {{> ionTab title="Search" path="searches" iconOff="ios-search" iconOn="ios-search" class="tab-item-balanced"}}
+                        {{> ionTab title="Messages" path="messages" iconOff="chatboxes" iconOn="chatboxes" class="tab-item-balanced"}}
+                        {{> ionTab title="Account" path="account" iconOff="ios-person-outline" iconOn="ios-person" class="tab-item-balanced"}}
+                    {{/ionTabs}}
+                {{/if}}
+            {{/ionSideMenuContent}}
+            <!-- end side menu content -->
+
+        {{/ionSideMenuContainer}}
+
+
+
+
     {{/ionBody}}
 </template>

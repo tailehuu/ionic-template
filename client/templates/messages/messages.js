@@ -18,7 +18,9 @@ var users = [
             'http://www.basicspine.com/blog/wp-content/uploads/rob-gronkowski-back-injury.jpg',
             'https://randomuser.me/api/portraits/thumb/men/2.jpg',
             'https://randomuser.me/api/portraits/thumb/men/3.jpg'
-        ]
+        ],
+        message: "Awesome! Thanks!",
+        time: "0 hours remaining"
     },
     {
         firstName: 'Sarah',
@@ -39,7 +41,9 @@ var users = [
             'http://i.kinja-img.com/gawker-media/image/upload/s--v0ZoywbC--/18zxuccwj2vtfjpg.jpg',
             'https://randomuser.me/api/portraits/thumb/men/5.jpg',
             'https://randomuser.me/api/portraits/thumb/men/6.jpg'
-        ]
+        ],
+        message: "Ah! I am so jealous!! how was itt!..",
+        time: "20 hours remaining"
     },
     {
         firstName: 'Camilia',
@@ -64,7 +68,9 @@ var users = [
             'http://static.foxsports.com/content/fscom/img/2010/06/22/062210-NFL-Photo-Gallery-SW-1_20100622171421_600_400.JPG',
             'https://randomuser.me/api/portraits/thumb/men/8.jpg',
             'https://randomuser.me/api/portraits/thumb/men/9.jpg'
-        ]
+        ],
+        message: "I saw your profile says you know...",
+        time: "12 hours remaining"
     }
 ];
 
