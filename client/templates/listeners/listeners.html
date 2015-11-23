@@ -1,4 +1,5 @@
-<template name="searches">
+<template name="listeners">
+
     {{#contentFor "headerTitle"}}
         <h1 class="title">Search</h1>
         <button class="button button-clear pull-right" data-ion-menu-toggle="right">
@@ -12,9 +13,10 @@
 
     {{#ionView}}
         {{#ionContent class="padding"}}
-            {{#each users}}
-                {{> search}}
+            {{#each listeners}}
+                {{> listener}}
             {{/each}}
         {{/ionContent}}
     {{/ionView}}
+
 </template>

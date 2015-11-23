@@ -1,0 +1,19 @@
+<template name="donationPayment">
+    {{#contentFor "headerButtonLeft"}}
+        {{>ionNavBackButton text=false}}
+    {{/contentFor}}
+
+    {{#contentFor "headerButtonRight"}}
+        <button class="button button-clear">DONE</button>
+    {{/contentFor}}
+
+    {{#ionView}}
+        {{#ionContent}}
+            <p></p>
+
+            <label class="item item-input">
+                <input type="text" placeholder="1234 5678 1234 5678">
+            </label>
+        {{/ionContent}}
+    {{/ionView}}
+</template>

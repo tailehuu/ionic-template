@@ -1,0 +1,22 @@
+<template name="editProfile">
+    {{#contentFor "headerButtonLeft"}}
+        {{>ionNavBackButton text=false}}
+    {{/contentFor}}
+
+    {{#contentFor "headerTitle"}}
+        <h1 class="title">Edit Profile</h1>
+    {{/contentFor}}
+
+    {{#contentFor "headerButtonRight"}}
+        <button class="button button-clear">DONE</button>
+    {{/contentFor}}
+
+    {{#ionView}}
+        {{#ionContent}}
+            <h3>Profile</h3>
+            <p>
+                ...
+            </p>
+        {{/ionContent}}
+    {{/ionView}}
+</template>

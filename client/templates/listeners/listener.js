@@ -1,4 +1,4 @@
-Template.search.helpers({
+Template.listener.helpers({
     fullName: function () {
         return this.firstName.toString() + " " + this.lastName.toString();
     },

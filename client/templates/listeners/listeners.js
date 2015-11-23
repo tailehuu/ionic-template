@@ -96,6 +96,6 @@ var users = [
     }
 ];
 
-Template.searches.helpers({
-    users: users
+Template.listeners.helpers({
+    listeners: users
 });

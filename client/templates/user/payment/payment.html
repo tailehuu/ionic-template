@@ -1,0 +1,22 @@
+<template name="payment">
+    {{#contentFor "headerButtonLeft"}}
+        {{>ionNavBackButton text=false}}
+    {{/contentFor}}
+
+    {{#contentFor "headerTitle"}}
+        <h1 class="title">Payment</h1>
+    {{/contentFor}}
+
+    {{#ionView}}
+        {{#ionContent}}
+            <p></p>
+
+            <label class="item item-input">
+                <input type="text" placeholder="Personal ...9511">
+            </label>
+
+            <p></p>
+            <button class="button">Add payment</button>
+        {{/ionContent}}
+    {{/ionView}}
+</template>
